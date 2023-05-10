@@ -1,0 +1,228 @@
+:root {
+  --first-color-logo: #4d5ae5;
+  --second-color-logo: #2e2f42;
+  --background-color: #ffffff;
+  --fond-family-color: #434455;
+  --logo-color-on-dark: #f4f4fd;
+  --background-color-footer: #2e2f42;
+  --background-color-hero: #2e2f42;
+  --secondary-title-color: #2e2f42;
+  --text-description-color: #434455;
+  --color-button-portfolio: #4d5ae5;
+  --backgraund-color-button-portfolio: #f4f4fd;
+
+  /* Сброс */
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+/* //////////////////////////// */
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--fond-family-color);
+  font-style: normal;
+  background-color: var(--background-color);
+}
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Компоненты */
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.secondary-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-title-color);
+}
+.text-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-description-color);
+}
+
+/* Шапка */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--first-color-logo);
+}
+.element {
+  color: var(--second-color-logo);
+}
+.header-container {
+  display: flex;
+}
+.navigation {
+  display: flex;
+  margin-right: auto;
+}
+.menu {
+  display: flex;
+}
+.address-display {
+  display: flex;
+}
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+.contact-position {
+  margin-right: 40px;
+}
+.header {
+  padding: 24px 0;
+}
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--second-color-logo);
+}
+.contact-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--fond-family-color);
+}
+.address {
+  font-style: normal;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+}
+/* Заголовок, главный экран */
+.hero-titel {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 188px;
+  padding-bottom: 192px;
+}
+.section-hero {
+  background-color: var(--background-color-hero);
+}
+.button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: #4d5ae5;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.button:hover,
+.button:focus {
+  background: #404bbf;
+}
+
+/* * .container-hero{
+  width: 1440px;
+height: 600px;
+left: calc(50% - 1440px/2);
+bottom: 1920px;
+background:var(--background-color-hero);
+} */ */
+/* Презентация и специалисты*/
+
+.secondary-title-section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--secondary-title-color);
+}
+.section-spesialist {
+  background-color: #f4f4fd;
+}
+.bottom-background {
+  background-color: #ffffff;
+}
+/* Футер */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--first-color-logo);
+
+  margin-right: 76px;
+}
+.element-on-dark {
+  color: var(--logo-color-on-dark);
+}
+.footer {
+  background-color: var(--background-color-footer);
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--logo-color-on-dark);
+}
+/* Кнопки портфолио */
+.list-button-properties {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-button-portfolio);
+  background-color: var(--backgraund-color-button-portfolio);
+}
+.list-button-properties:hover,
+.list-button-properties:focus {
+  background: #404bbf;
+  color: #ffffff;
+}
+/* ////////////////////////// */
