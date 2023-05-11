@@ -10,7 +10,7 @@
   --text-description-color: #434455;
   --color-button-portfolio: #4d5ae5;
   --backgraund-color-button-portfolio: #f4f4fd;
-
+  --border-color:#e7e9fc;
   /* Сброс */
 }
 h1,
@@ -32,6 +32,7 @@ button {
   cursor: pointer;
 }
 /* //////////////////////////// */
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--fond-family-color);
@@ -59,6 +60,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-title-color);
+  margin-bottom: 8px;
 }
 .text-description {
   font-weight: 400;
@@ -87,9 +89,11 @@ body {
 .navigation {
   display: flex;
   margin-right: auto;
+  align-items: center;
 }
 .menu {
   display: flex;
+  gap: 40px;
 }
 .address-display {
   display: flex;
@@ -102,6 +106,7 @@ body {
 }
 .header {
   padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 .menu-link {
   font-weight: 500;
@@ -109,6 +114,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--second-color-logo);
+  padding: 24px 0;
 }
 .contact-link {
   font-weight: 400;
@@ -134,13 +140,19 @@ body {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #ffffff;
-  padding-top: 188px;
-  padding-bottom: 192px;
+  margin-bottom: 48px;
+  max-width: 496px;
+  padding: o 472px 0 472px;
 }
+/* .container-hero-position{
+  padding: o 472px 0 472px;
+} */
 .section-hero {
   background-color: var(--background-color-hero);
+  padding-top: 188px;
+  padding-bottom: 188px;
+  margin-bottom: 120px;
 }
 .button {
   font-family: "Roboto", sans-serif;
@@ -154,35 +166,72 @@ body {
   padding-bottom: 16px;
   padding-left: 32px;
   padding-right: 32px;
+  margin-top: 48px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus {
   background: #404bbf;
 }
 
-/* * .container-hero{
-  width: 1440px;
-height: 600px;
-left: calc(50% - 1440px/2);
-bottom: 1920px;
-background:var(--background-color-hero);
-} */ */
 /* Презентация и специалисты*/
-
+.section-strategies {
+  padding-bottom: 120px;
+}
+.list-strategies {
+  display: flex;
+  gap: 24px;
+}
+.element-styles {
+  width: calc((100% - 72px) / 4);
+}
+.list-presentation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.section-presentation {
+  padding-bottom: 120px;
+}
 .secondary-title-section {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  text-transform: capitalize;
   color: var(--secondary-title-color);
+  margin-bottom: 72px;
 }
-.section-spesialist {
+.list-specialist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.section-specialist {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 .bottom-background {
   background-color: #ffffff;
+}
+.foto-specialist {
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
+}
+.description-specialist {
+  padding: 32px 16px;
+}
+.title-specialist {
+  text-align: center;
+}
+
+.text-specialist {
+  text-align: center;
 }
 /* Футер */
 .logo {
@@ -193,7 +242,6 @@ background:var(--background-color-hero);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-color-logo);
-
   margin-right: 76px;
 }
 .element-on-dark {
@@ -201,14 +249,19 @@ background:var(--background-color-hero);
 }
 .footer {
   background-color: var(--background-color-footer);
+  padding: 100px 0;
 }
-
 .footer-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--logo-color-on-dark);
+  max-width: 264px;
+}
+.logo-futer {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 /* Кнопки портфолио */
 .list-button-properties {
@@ -219,10 +272,40 @@ background:var(--background-color-hero);
   letter-spacing: 0.04em;
   color: var(--color-button-portfolio);
   background-color: var(--backgraund-color-button-portfolio);
+  padding: 12px 24px;
+  border: 1px solid var(--border-color);
+  border: 1px solid transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 .list-button-properties:hover,
 .list-button-properties:focus {
   background: #404bbf;
   color: #ffffff;
+}
+.list-button{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px
+}
+.section-nav{
+  padding: 96px 0 120px;
+}
+.list-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.element-gallery{
+ width: calc((100% - 48px) / 3);
+}
+.link-gallery{
+  padding: 32px 16px;
+  border: 1px solid var(--border-color);
+  border-top: none; 
+  margin-bottom: 8px;
+  
 }
 /* ////////////////////////// */
