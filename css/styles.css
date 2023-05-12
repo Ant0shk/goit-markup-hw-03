@@ -97,6 +97,7 @@ body {
 }
 .address-display {
   display: flex;
+  gap: 40px;
 }
 .menu-item:not(:last-child) {
   margin-right: 40px;
@@ -141,19 +142,20 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 48px;
   max-width: 496px;
   padding: o 472px 0 472px;
+  margin: 0 auto;
 }
 /* .container-hero-position{
-  padding: o 472px 0 472px;
+  display: block;
+  align-items: center
+  
 } */
 .section-hero {
   background-color: var(--background-color-hero);
   padding-top: 188px;
   padding-bottom: 188px;
-  margin-bottom: 120px;
-}
+  }
 .button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -166,12 +168,13 @@ body {
   padding-bottom: 16px;
   padding-left: 32px;
   padding-right: 32px;
-  margin-top: 48px;
   display: block;
   min-width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 48px;
 }
 .button:hover,
 .button:focus {
@@ -180,7 +183,7 @@ body {
 
 /* Презентация и специалисты*/
 .section-strategies {
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 .list-strategies {
   display: flex;
@@ -306,9 +309,6 @@ body {
   border: 1px solid var(--border-color);
   border-top: none; 
   margin-bottom: 8px;
-  display:flex;
-  flex-direction:column;
-  text-align:left;
-  
+
 }
 /* ////////////////////////// */
