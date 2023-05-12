@@ -277,14 +277,13 @@ body {
   background-color: var(--backgraund-color-button-portfolio);
   padding: 12px 24px;
   border: 1px solid var(--border-color);
-  border: 1px solid transparent;
-  border: 1px solid transparent;
   border-radius: 4px;
 }
 .list-button-properties:hover,
 .list-button-properties:focus {
   background: #404bbf;
   color: #ffffff;
+  border: 1px solid transparent;
 }
 .list-button {
   display: flex;
